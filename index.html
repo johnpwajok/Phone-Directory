@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Problem 1</title>
+</head>
+
+<body>
+  <center>
+    <div class="container">
+      <h1>Phone Directory</h1>
+      <div class="inputSection">
+        <input type="text" id="contactName" class="input" name="contactName" placeHolder="Contact Name" maxlength="20">
+        <input type="tel" id="mobileNumber" class="input" name="mobileNumber" placeHolder="Mobile Number" pattern="[0-9]{10}" required minlength="10" maxlength="10">
+        <input type="email" id="email" class="input" name="email" placeHolder="Email" maxlength="39">
+        <input type="submit" id="submitButton" class="submit" value="Add Contact">
+      </div><br><br>
+      <div id="errorDiv">
+        <h3>Error! Invalid input</h3>
+      </div><br>
+      <div class="outputSection">
+        <p>Search Contacts by Mobile No: <input type="tel" id="searchBox" name="searchBox" patern="[0-9]{10}" maxlength="10"></p>
+        <p>(search starts from one number before (if using backspace) or after the last one you entered into the search box)</p>
+        <h3>Contacts Summary</h3>
+        <table class="contactsTable" id="mainTable">
+          <tr>
+            <th id="nameColumn" class="nameCol">Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+          </tr>
+        </table>
+        <div id="noResult">
+          <h2>NO RESULT</h2>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </center>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

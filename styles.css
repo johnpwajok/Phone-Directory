@@ -1,0 +1,43 @@
+body {
+  background-color: #F2FFFF;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.contactsTable {
+  width: 35%;
+}
+
+.hidden {
+  display: none;
+}
+
+.input {
+  margin: 0.5rem;
+}
+
+.inputSection {
+  width: 35%;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(92, 92, 165);
+  padding: 2rem 1rem;
+  background-color: lightblue;
+}
+
+.nameCol:hover {
+  background-color: #f2f2f2;
+}
+
+.noResult {
+  width: 15%;
+  background-color: red;
+}
+
+.oddRow {
+  background-color: #f2f2f2;
+}
